@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { searchChange } from '../actions/catalogActions';
 import { basketInitProduct } from '../actions/basketProductActions';
 import { clearBasket, getLastBsket } from '../utils/basket-storage';
+import logo from '../img/header-logo.png';
 
 export default function Header() {
   const [searchFormVisible, setSerchFormVisible] = useState(true);
@@ -44,7 +45,7 @@ export default function Header() {
         <div className="col">
           <nav className="navbar navbar-expand-sm navbar-light bg-light">
             <Link className="navbar-brand" to="/">
-              <img src="img/header-logo.png" alt="Bosa Noga" />
+              <img src={logo} alt="Bosa Noga" />
             </Link>
             <div className="collapase navbar-collapse" id="navbarMain">
               <ul className="navbar-nav mr-auto">
